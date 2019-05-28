@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BookShop - Ron Avnery</title>
+    <link href="https://fonts.googleapis.com/css?family=Nixie+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lib/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header><button onclick="onAdd()" class="btn-success">Add New Book</button></header>
+    <div class="main-container">
+        <table class="table">
+            <thead class="table-title">
+                <td>Id</td>
+                <td>Cover</td>
+                <td>Title</td>
+                <td>Price</td>
+                <td>Actions</td>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <div class="modal">
+        <span class="modal-title">Add a new book:</span>
+        <span class="title">Title:</span><input class="title-input" type="text">
+        <span class="price">Price:</span><input class="price-input" type="text">
+        <button class="final-action">Add Book</button>
+    </div>
+
+    <script src="lib/jquery/jquery.js"></script>
+    <script src="js/book-util.js"></script>
+    <script src="js/book-controller.js"></script>
+    <script src="js/book-service.js"></script>
+</body>
+
+</html>
